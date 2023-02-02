@@ -33,7 +33,7 @@ def select_all():
 
 
 def select(id):
-    task = None
+    book = None
     sql = "SELECT * FROM books WHERE id = %s"
     values = [id]
     result = run_sql(sql, values)[0]
